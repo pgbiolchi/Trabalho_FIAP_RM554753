@@ -1,0 +1,140 @@
+:root {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --primary-color: #007bff;
+    --card-bg-color: #333;
+    --card-header-bg-color: #303030;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.profile-name{
+    margin-top: 10px;
+}
+
+.progress-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.progress {
+    width: 80%;
+    margin-bottom: 10px;
+    height: 1.5rem;
+    transition: width .1s ease;
+}
+
+.progress:hover{
+    width: 100%;
+    
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: var(--text-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--primary-color);
+    transition: width .6s ease;
+}
+
+.progress-bar-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color);
+    white-space: nowrap;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-header {
+    background-color: var(--card-header-bg-color);
+}
+
+.menu-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.menu-icons img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-icons img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.copyright{
+    color: #303030
+}
+
+@media (max-width: 768px) {
+    .progress {
+        width: 90%;
+    }
+
+    .menu-icons {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu-icons img {
+        margin-bottom: 10px;
+    }
+
+    .card-icon img {
+        width: 64px;
+        height: 64px;
+        transition: transform 0.2s ease-in-out;
+    }
+}
